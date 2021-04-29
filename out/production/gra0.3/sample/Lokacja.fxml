@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="601.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane fx:id="menku" layoutY="465.0" prefHeight="136.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Atak">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="hit" layoutY="2.0" mnemonicParsing="false" onAction="#hit" prefHeight="46.0" prefWidth="80.0" text="Hit" />
+                        <Button fx:id="slash" layoutX="80.0" layoutY="2.0" mnemonicParsing="false" onAction="#slash" prefHeight="45.0" prefWidth="81.0" text="Slash" />
+                        <Button fx:id="datt" layoutX="161.0" layoutY="2.0" mnemonicParsing="false" onAction="#datt" prefHeight="45.0" prefWidth="100.0" text="Double Attack" />
+                        <Button fx:id="gimp" layoutX="342.0" layoutY="3.0" mnemonicParsing="false" onAction="#gimp" prefHeight="43.0" prefWidth="80.0" text="Giga Impact" />
+                        <Button fx:id="tsla" layoutX="258.0" layoutY="2.0" mnemonicParsing="false" onAction="#tsla" prefHeight="44.0" prefWidth="84.0" text="Triple Slash" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Magia">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="eball" mnemonicParsing="false" onAction="#eball" prefHeight="55.0" prefWidth="81.0" text="Energy ball" />
+                        <Button fx:id="fball" layoutX="81.0" layoutY="1.0" mnemonicParsing="false" onAction="#fball" prefHeight="53.0" prefWidth="87.0" text="Fire ball" />
+                        <Button fx:id="tbolt" layoutX="168.0" layoutY="2.0" mnemonicParsing="false" onAction="#tbolt" prefHeight="52.0" prefWidth="85.0" text="Thunder bolt" />
+                        <Button fx:id="aspe" layoutX="253.0" layoutY="2.0" mnemonicParsing="false" onAction="#aspe" prefHeight="51.0" prefWidth="88.0" text="Aura Spear" />
+                        <Button fx:id="icec" layoutX="341.0" layoutY="2.0" mnemonicParsing="false" onAction="#icec" prefHeight="50.0" prefWidth="91.0" text="Ice Crush" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="TurnEnd" layoutY="440.0" mnemonicParsing="false" onAction="#TurnEnd" prefHeight="25.0" prefWidth="72.0" text="OK" />
+      <Label fx:id="hpbar" layoutX="25.0" layoutY="23.0" prefHeight="37.0" prefWidth="167.0" text="Label" />
+      <Label fx:id="manabar" layoutX="25.0" layoutY="60.0" prefHeight="37.0" prefWidth="167.0" text="Label" />
+      <Label fx:id="staminabar" layoutX="25.0" layoutY="97.0" prefHeight="37.0" prefWidth="167.0" text="Label" />
+      <Label fx:id="enhpbar" layoutX="816.0" layoutY="60.0" prefHeight="37.0" prefWidth="122.0" text="Label" />
+   </children>
+</AnchorPane>

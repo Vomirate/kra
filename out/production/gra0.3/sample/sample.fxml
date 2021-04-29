@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="471.0" prefWidth="738.0" style="-fx-background-color: rgb(26, 13, 0);">
+         <children>
+            <Button fx:id="Start" layoutX="80.0" layoutY="409.0" mnemonicParsing="false" onAction="#Start" text="Start" />
+            <Button fx:id="knight" layoutX="262.0" layoutY="182.0" mnemonicParsing="false" onAction="#knight" text="Knight" />
+            <Button fx:id="barbarian" layoutX="442.0" layoutY="182.0" mnemonicParsing="false" onAction="#barbarian" text="Barbarian" />
+            <Button fx:id="hunter" layoutX="615.0" layoutY="182.0" mnemonicParsing="false" onAction="#hunter" text="Hunter" />
+            <Button fx:id="shaman" layoutX="258.0" layoutY="409.0" mnemonicParsing="false" onAction="#shaman" text="Shaman" />
+            <Button fx:id="priest" layoutX="452.0" layoutY="409.0" mnemonicParsing="false" onAction="#priest" text="Priest" />
+            <Button fx:id="mage" layoutX="618.0" layoutY="409.0" mnemonicParsing="false" onAction="#mage" text="Mage" />
+            <TextArea prefHeight="64.0" prefWidth="200.0" text="Choose Your class">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <ImageView fx:id="knclas" fitHeight="150.0" fitWidth="150.0" layoutX="213.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Knight.jpg" />
+               </image></ImageView>
+            <ImageView fx:id="baclas" fitHeight="150.0" fitWidth="150.0" layoutX="400.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@barb.jpg" />
+               </image></ImageView>
+            <ImageView fx:id="asclas" fitHeight="150.0" fitWidth="150.0" layoutX="567.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sas.jpg" />
+               </image></ImageView>
+            <ImageView fx:id="shclas" fitHeight="150.0" fitWidth="150.0" layoutX="213.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Shaman.png" />
+               </image></ImageView>
+            <ImageView fx:id="prclas" fitHeight="150.0" fitWidth="150.0" layoutX="401.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@prist.png" />
+               </image></ImageView>
+            <ImageView fx:id="maclas" fitHeight="150.0" fitWidth="150.0" layoutX="567.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@mag.jpg" />
+               </image></ImageView>
+            <TextArea fx:id="nick" layoutY="82.0" prefHeight="58.0" prefWidth="200.0" promptText="Choose Your name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
